@@ -1,0 +1,6 @@
+*
+!.config
+!.config/pet
+!.config/pet/snippets.toml
+!.LICENSES.d
+!.LICENSES.d/pet
