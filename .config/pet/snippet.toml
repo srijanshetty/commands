@@ -12,3 +12,8 @@
   description = "create openssl certificate"
   command = "openssl req -newkey rsa:4096 -nodes -keyout <key=key>.pem -x509 -days 365 -out <cert=certificate>.pem"
   output = ""
+
+[[snippets]]
+  description = "Increase filewatchers by settings fs.inotify in sysctl"
+  command = "echo fs.inotify.max_user_watches=<count=524288> | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
+  output = ""
