@@ -17,3 +17,13 @@
   description = "Increase filewatchers by settings fs.inotify in sysctl"
   command = "echo fs.inotify.max_user_watches=<count=524288> | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
   output = ""
+
+[[snippets]]
+  description = "spin up a redis instance on docker/podman"
+  command = "podman run -d -p 6379:6379 --name redisdb redis"
+  output = ""
+
+[[snippets]]
+  description = "spin up a mongodb instance on docker/podman"
+  command = "podman run -d -p 27017-27019:27017-27019 --name mongodb mongo"
+  output = ""
