@@ -32,3 +32,8 @@
   description = "kill a batch of similar jobs"
   command = "$ ps auxf | grep <regex> | awk '{ print $2 }' | xargs kill -9"
   output = ""
+
+[[snippets]]
+  description = "logging to gcloud docker registry"
+  command = "gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io"
+  output = ""
